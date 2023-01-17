@@ -1,0 +1,119 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #191927;
+  font-family: monospace;
+}
+
+
+#main {
+  width: fit-content;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#channels {
+  display: inline-block;
+  width: 10vw;
+  min-height: 10vh;
+  text-align: center;
+}
+
+.channel {
+  color: white;
+  height: 15px;
+  background: #2a2a38;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 30px;
+
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#content {
+  float: right;
+  display: inline-block;
+  height: 70vh;
+  box-sizing:border-box;
+  margin-top: 5px;
+  margin-left: 10px;
+  position: relative;
+}
+
+#remoteVideos {
+  border-radius: 10px 10px 0 0;
+  width: 976px;
+  text-align: center;
+  background: #0b0b12;
+  overflow-y: auto;
+
+  position: relative;
+  z-index: 2;
+}
+
+.remoteVideo {
+  border-radius: 10px;
+  background: URL("nosignal.jpg");
+  background-size: cover;
+  width: 320px;
+  height: 180px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.remoteVideo:first-child {
+  margin-top: 4px;
+}
+
+#chat {
+  width: 100%;
+  background: #80008047;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border-radius: 10px;
+  color: white;
+}
+
+#textbox {
+  box-sizing:border-box;
+  width: 100%;
+  height: 30px;
+  padding: 0;
+  border: none;
+  padding-left: 10px;
+  border-radius: 0 0 10px 10px;
+  color: white;
+  background: #0b0b12;
+  position: absolute;
+  bottom: 0;
+}
+#textbox:focus {outline: none;}
+
+#chat-content {
+  padding-left: 10px;
+  padding-right: 10px;
+  position: absolute;
+  bottom: 40px;
+}
+
+
+.channel:nth-of-type(5n+1):hover {
+  background: #c0392b;
+}
+.channel:nth-of-type(5n+2):hover {
+  background: #8e44ad;
+}
+.channel:nth-of-type(5n+3):hover {
+  background: #2980b9;
+}
+.channel:nth-of-type(5n+4):hover {
+  background: #27ae60;
+}
+.channel:nth-of-type(5n+5):hover {
+  background: #f39c12;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png" />
+  </head>
+  <body>
+    <button onclick="capture()">Capture</button>
+    <div id="main">
+      <div id="channels">
+
+        <div class="channel">channel 1</div>
+        <div class="channel">channel 1</div>
+        <div class="channel">channel 1</div>
+        <div class="channel">channel 1</div>
+        <div class="channel">channel 1</div>
+        <div class="channel">channel 1</div>
+        <div class="channel">channel 1</div>
+        <div class="channel">channel 1</div>
+        <div class="channel">channel 1</div>
+        <div class="channel">channel 1</div>
+
+      </div>
+      <div id="content">
+        <div id="remoteVideos">
+        </div>
+
+        <div id="chat">
+          <div id="chat-content">
+            Start texting by clicking on a channel to connect to
+
+          </div>
+          <input type="text" name="" value="" id="textbox" placeholder="Write message here" onkeypress="if(event.key === 'Enter') sendText(this);">
+        </div>
+      </div>
+    </div>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="webRTC.js" charset="utf-8"></script>
+  </body>
+</html>
