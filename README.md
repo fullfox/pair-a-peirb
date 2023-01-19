@@ -2,9 +2,9 @@
 *Application de videoconférence en P2P, sous node.js*
 
 ### Lancement
-Le serveur nécessite les modules **socket.io** et **express**, à installer avec
+Le serveur nécessite les modules **socket.io** et **express**, on installe les dépendances avec
 ```bash
-npm i socket.io express
+npm i
 ```
 Puis lancer le serveur avec
 ```bash
