@@ -7,21 +7,11 @@
     <link rel="icon" type="image/png" href="favicon.png" />
   </head>
   <body>
-    <button onclick="capture()">Capture</button>
+
     <div id="main">
+      <center><h1>🍯 Pair à Peirb 🐝</h1></center>
       <div id="channels">
-
-        <div class="channel">channel 1</div>
-        <div class="channel">channel 1</div>
-        <div class="channel">channel 1</div>
-        <div class="channel">channel 1</div>
-        <div class="channel">channel 1</div>
-        <div class="channel">channel 1</div>
-        <div class="channel">channel 1</div>
-        <div class="channel">channel 1</div>
-        <div class="channel">channel 1</div>
-        <div class="channel">channel 1</div>
-
+        <div class="add-channel" onclick="createRoom(prompt('Room name ?'))">New Room</div>
       </div>
       <div id="content">
         <div id="remoteVideos">
@@ -32,7 +22,9 @@
             Start texting by clicking on a channel to connect to
 
           </div>
-          <input type="text" name="" value="" id="textbox" placeholder="Write message here" onkeypress="if(event.key === 'Enter') sendText(this);">
+          <input disabled type="text" id="textbox" placeholder="Write message here" onkeypress="if(event.key === 'Enter') sendText(this);"></input>
+          <img src="novideo.png" width="30" class="capture" id="streamVideo" onclick="streamVideo(this);">
+          <img src="mute.png" width="30" class="capture" id="streamAudio" onclick="streamAudio(this);">
         </div>
       </div>
     </div>

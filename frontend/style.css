@@ -5,13 +5,14 @@ html, body {
   font-family: monospace;
 }
 
+h1 {color: white;}
 
 #main {
   width: fit-content;
 
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
+  margin-top: 20px;
   margin-bottom: 100px;
 }
 
@@ -23,6 +24,7 @@ html, body {
 }
 
 .channel {
+  cursor: pointer;
   color: white;
   height: 15px;
   background: #2a2a38;
@@ -59,8 +61,8 @@ html, body {
   border-radius: 10px;
   background: URL("nosignal.jpg");
   background-size: cover;
-  width: 320px;
-  height: 180px;
+  max-width: 320px;
+  max-height: 180px;
   margin-left: 2px;
   margin-right: 2px;
 }
@@ -71,7 +73,7 @@ html, body {
 
 #chat {
   width: 100%;
-  background: #80008047;
+  background: #00000050;
   height: 100%;
   position: absolute;
   top: 0;
@@ -94,6 +96,24 @@ html, body {
 }
 #textbox:focus {outline: none;}
 
+.capture {
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+}
+.capture:hover {
+  transform: scale(1.1);
+}
+
+#streamVideo {
+  right: 30px;
+}
+
+#streamAudio {
+  right: 0px;
+}
+
+
 #chat-content {
   padding-left: 10px;
   padding-right: 10px;
@@ -102,18 +122,23 @@ html, body {
 }
 
 
-.channel:nth-of-type(5n+1):hover {
+.channel:hover {
+  background: #505070;
+}
+
+
+.add-channel {
+  cursor: pointer;
+  color: white;
+  height: 15px;
   background: #c0392b;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 30px;
+  margin-top: 5px;
+  margin-bottom: 25px;
 }
-.channel:nth-of-type(5n+2):hover {
-  background: #8e44ad;
-}
-.channel:nth-of-type(5n+3):hover {
-  background: #2980b9;
-}
-.channel:nth-of-type(5n+4):hover {
-  background: #27ae60;
-}
-.channel:nth-of-type(5n+5):hover {
-  background: #f39c12;
+
+.add-channel:hover {
+  background: #e15749;
 }
